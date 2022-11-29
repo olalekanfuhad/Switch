@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modern.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="sharp.png" class="img">
+            <img src="logo.png" id="logo">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Modern</a></li>
+                <li><a href="#">Contemporary</a></li>
+                <li><a href="#">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="car-container">
+            <img src="model3-hong-kong.jpg" class="car">
+            <img src="C4.PNG" class="light" id="light">
+            <img src="C4.PNG" class="flash" id="flash">
+        </div>
+        <div class="text-container">
+            <h1>Latest <br> In <br> Lighting</h1>
+            <p> This is the first lamp from our company. We're making a huge
+                collection of modern Lamps in all categories from home use to
+                office use.
+            </p>
+            <a href="#">Check All Collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let light = document.getElementById("light");
+        let flash = document.getElementById("flash");
+        function toggleBtn(){
+            btn.classList.toggle("active"); 
+            light.classList.toggle("on")
+            flash.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
